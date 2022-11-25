@@ -8,4 +8,6 @@ import bulma from 'bulma'
 
 axios.defaults.baseURL = 'http://localhost:8000'
 
-createApp(App).use(router, store, bulma).mount('#app')
+const app = createApp(App)
+app.use(router, store, bulma)
+app.mount('#app')

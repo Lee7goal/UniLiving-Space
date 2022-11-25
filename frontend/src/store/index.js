@@ -5,9 +5,15 @@ const store = createStore({
     state () {
         return {
             count: 0,
-            isAuthenticated: false
+            isAuthenticated: false,
+            isLoading: true
         }
     },
+    // state: {
+    //     count: 0,
+    //     isAuthenticated: false,
+    //     isLoading: true
+    // },
     mutations: {
         increment (state) {
             state.count++
