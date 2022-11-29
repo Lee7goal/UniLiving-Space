@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This store num: {{$store.state}}</h1>
+    <h1>This store num: {{$store.state.name}}</h1>
   </div>
 </template>
 

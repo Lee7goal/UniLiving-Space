@@ -1,6 +1,4 @@
 <script>
-import TheWelcome from '../components/TheWelcome.vue'
-import axios from "axios";
 import store from "../store";
 
 // onMounted(() => {
@@ -16,23 +14,9 @@ import store from "../store";
 // })
 export default {
   name: 'HomeView',
-  data() {
-    return {
-      count: 0
-    }
-  },
-  components: [TheWelcome],
-  mounted() {
-    this.getCount();
-  },
   methods: {
-    getCount() {
-      this.count = store.state.count;
-    },
     increase() {
       store.commit('increaseCount')
-      this.getCount();
-      console.log(this.count)
     }
   }
 }
@@ -41,7 +25,7 @@ export default {
 <template>
   <main>
 <!--    <TheWelcome/>-->
-    <p>{{this.count}}</p>
+    <p>{{this.$store.state.count}}</p>
     <button @click="increase">Increase</button>
   </main>
 </template>
