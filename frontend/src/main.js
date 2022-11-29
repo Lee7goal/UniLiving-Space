@@ -1,13 +1,16 @@
-import {createApp} from 'vue'
-import './style.css'
+import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 import axios from "axios";
-import router from "./router";
-import store from "./store";
-import bulma from 'bulma'
+import Vuex from 'vuex'
 
-axios.defaults.baseURL = 'http://localhost:8000'
+
+import './assets/main.css'
 
 const app = createApp(App)
-app.use(router, store, bulma)
+
+axios.defaults.baseURL = 'http://localhost:8000'
+app.use(Vuex)
+app.use(router, axios)
+
 app.mount('#app')
