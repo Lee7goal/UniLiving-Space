@@ -1,5 +1,6 @@
 <script>
 import store from "../store";
+import {toast} from "bulma-toast"
 
 // onMounted(() => {
 //   axios.get('/?name=lee7goal')
@@ -17,6 +18,11 @@ export default {
   methods: {
     increase() {
       store.commit('increaseCount')
+
+      toast({
+        message: "You Add 1 to Count!",
+        type: "is-success"
+      })
     }
   }
 }
