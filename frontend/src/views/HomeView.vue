@@ -29,9 +29,13 @@ export default {
 </script>
 
 <template>
-  <main>
-<!--    <TheWelcome/>-->
-    <p>{{this.$store.state.count}}</p>
-    <button @click="increase">Increase</button>
-  </main>
+  <div class="container">
+    <div class="notification is-primary">
+      <p>{{this.$store.state.count}}</p>
+      <button class="button is-primary" @click="increase">Increase</button>
+    </div>
+  </div>
+
+
+
 </template>

@@ -1,7 +1,5 @@
 <template>
-  <div class="about">
-    <h1>This store num: {{$store.state.name}}</h1>
-  </div>
+    <h1 class="title">This store num: {{$store.state.name}}</h1>
 </template>
 
 <script>
