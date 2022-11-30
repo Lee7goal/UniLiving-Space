@@ -1,5 +1,7 @@
 <template>
+  <div class="container">
     <h1 class="title">This store num: {{$store.state.name}}</h1>
+  </div>
 </template>
 
 <script>

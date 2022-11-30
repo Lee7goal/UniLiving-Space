@@ -1,18 +1,8 @@
 <script>
 import store from "../store";
 import {toast} from "bulma-toast"
+import banner from "../assets/banner.jpg"
 
-// onMounted(() => {
-//   axios.get('/?name=lee7goal')
-//       .then(response => {
-//         console.log(response)
-//
-//       })
-//       .catch(error => {
-//         console.log(error)
-//         $store.state.commit('')
-//       })
-// })
 export default {
   name: 'HomeView',
   methods: {
@@ -29,13 +19,18 @@ export default {
 </script>
 
 <template>
+  <img src="@/assets/banner.jpg" alt="" id="banner">
   <div class="container">
-    <div class="notification is-primary">
-      <p>{{this.$store.state.count}}</p>
-      <button class="button is-primary" @click="increase">Increase</button>
-    </div>
+    <h1 class="title">欢迎来到他乡遇</h1>
   </div>
 
 
 
 </template>
+
+<style lang="scss">
+#banner {
+  //background-size: cover;
+  background: url("../assets/banner.jpg") no-repeat center center;
+}
+</style>
