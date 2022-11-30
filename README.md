@@ -8,9 +8,7 @@
 
 目前准备使用的技术栈为：
 
-
-
-后端
+##### 后端
 
 1. django-rest-frame-work
 2. rest-frame-work-cors
@@ -18,18 +16,16 @@
 
 
 
-前端
+##### 前端
 
-1.Vue3
+1. Vue3
+2. Vuex4
+3. Vue-Router
 
-2.Vuex4
-
-3.Vue-Router
-
-4.axios
+4. axios
 
 
 
-UI组件
+##### UI组件
 
 暂未定，不太喜欢扁平风，优先考虑pc端使用bulma老牌样式库
